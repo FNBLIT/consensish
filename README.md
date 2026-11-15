@@ -64,7 +64,7 @@ npm start
 
 `npm start` binds the production server to `127.0.0.1:9001` using macOS/Linux shell syntax. To choose another host or port, launch the build directly: `PORT=9002 HOST=127.0.0.1 node .output/server/index.mjs`.
 
-This is a Node server with a local SQLite file. It is not configured for Cloudflare Workers or ephemeral/serverless filesystem hosting. For public shareable URLs, place the server behind an HTTPS reverse proxy and retain its data volume. Public hosting and DNS have not been configured. The development server binds to loopback by default. The interface uses optional Google Fonts with local sans-serif fallbacks.
+This is a Node server with a local SQLite file. It is not configured for Cloudflare Workers or ephemeral/serverless filesystem hosting. For public shareable URLs, place the server behind an HTTPS reverse proxy and retain its data volume. Public hosting and DNS have not been configured. The development server binds to loopback by default. The interface uses system fonts, a monochrome layout, and response colors from the design document.
 
 ## Verification
 
