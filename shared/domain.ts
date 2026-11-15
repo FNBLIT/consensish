@@ -1,0 +1,6 @@
+export const positions = ['APPROVE', 'EXPRESS CONCERN', 'ASK CLARIFYING QUESTION', 'COMMENT', 'SUGGEST MODIFICATION', 'STAND ASIDE', 'BLOCK'] as const
+export type Position = typeof positions[number]
+export const labels: Record<Position, string> = { APPROVE: 'Approve', 'EXPRESS CONCERN': 'Express concern', 'ASK CLARIFYING QUESTION': 'Ask a question', COMMENT: 'Comment', 'SUGGEST MODIFICATION': 'Suggest a modification', 'STAND ASIDE': 'Stand aside', BLOCK: 'Block' }
+export interface Proposal { id: string; groupId: string; title: string; description: string; program: string; type: string; budget: number; recurring: string; facilitator: string; evidence: string; timeline: string; meeting: string; deadline: string; revision: number; status: string; outcome: string; createdAt: string; locked: boolean }
+export interface Response { id: string; proposalId: string; participantId: string; name: string; position: Position; justification: string; revision: number; createdAt: string; amendment?: { title: string; description: string; deadline?: string }; resolved: boolean }
+export interface Activity { id: number; proposalId: string | null; groupId: string; kind: string; text: string; createdAt: string }

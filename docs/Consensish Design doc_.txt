@@ -1,0 +1,204 @@
+Consensish Design doc:
+Purpose: An app to facilitate asynchronous Consensus decision making for Horizontal
+Organizations
+Tech Stack as proposed:
+Product 	Purpose 	Future plan
+Airtable 	Database 	Could port to Baserow
+Self-hosted or build out a
+SQL database
+Make.com 	Integration and Automation 	Self hosted APIs and Server
+side Python scripts to handle
+automations
+Softr 	Front end Web based app
+builder
+ReTool or flutter IOS &
+Android native app
+Database
+Table
+Description 	Links to 	Example Structure
+Meetings 	Meetings are where Proposals are
+presented.
+At the scheduled time Proposors
+(Participants filling the Role
+‘Proposor’)
+present their Proposal(s) and
+receive Responses
+Proposals
+Participants
+Responses
+Oct 2nd House
+Meeting
+Participants: Ben,
+Pix, Ridely, Melody,
+Goaty, Jax
+1. Ben Proposed
+‘Birthday
+Party ($200)’
+2. Ridley
+Proposed
+‘Bark at
+neighbors’
+Proposals 	Each Proposal has one or many
+Proposors,
+a Status,
+a Proposal Type,
+a Budget,
+a Program,
+a Description,
+Meetings
+Proposor(s)
+(Participants)
+Responses
+Programs
+Budgets
+Groups
+Proposal: Birthday
+Party
+Proposor:Ben
+Status:Pending
+Type: Event
+Budget: $200 (Pizza
+and Beer)
+
+-- 1 of 7 --
+
+a Timeline,
+and a Deadline.
+Any Responses are tied to the
+Proposal (with a Justification if
+BLOCK, EXPRESS CONCERN or
+SUGGEST MODIFICATION)
+Optionally, they may have an
+associated Group, and
+Supporting
+Documents/Resources
+Any Network Participants can
+access the list of Ongoing
+Proposals (Proposals that have
+not met their Deadline) and make
+a Response.
+Asynchronous Responses
+(Responses that come in between
+Meetings) are resolved at next
+meeting.
+Deadlines are set by Budget
+amount:
+$0-$1000 have a Deadline of +7
+Days after Meeting
+$1000-$5000 have a Deadline of
++14 Days after Meeting
+>$5000 and any Proposal Type =
+Policy Change have a Deadline
+of +28 Days
+Deadlines can be expanded
+beyond Defaults above with
+Proposor consent (via a
+SUGGEST MODIFICATION
+Response from a
+Participant(Suggestor)
+If a Deadline expansion does not
+have Proposor consent, Deadline
+stands at Default.
+Program: Friendship
+& Community
+Description: I would
+like to host a handful
+of folks (no more than
+10) on my Birthday to
+spend time and have
+a fun evening.
+Timeline: Invitations
+sent by Sept 20th
+Pizza and Beer
+Purchased October
+2nd
+Deadline: September
+19th
+Responses:
+Approve:Pixie,
+Melody
+Expressed Concern:
+Ridley: ‘Strangers are
+scary, will bark at
+them’
+Stand Aside:Jax,
+Goaty
+Responses 	Each Response has a Position,
+and a Participant.
+Position Options are:
+APPROVE
+BLOCK
+STAND ASIDE
+EXPRESS CONCERN
+ASK CLARIFYING QUESTION
+
+-- 2 of 7 --
+
+SUGGEST MODIFICATION
+COMMENT
+BLOCK, EXPRESS CONCERN
+and SUGGEST MODIFICATION
+require a Justification
+Additionally, SUGGEST
+MODIFICATION creates a new
+Proposal record linked to the
+original that, if accepted by
+Proposor(s), replaces/merges with
+original Proposal, Responses are
+cleared and Participants are
+prompted to make a new
+Response
+Default Position is STAND ASIDE,
+Groups
+Participants
+Roles
+Programs
+Budget
+Expenses
+
+-- 3 of 7 --
+
+Process:
+1. A PROPOSAL is made, added to the database, and a time allotted in a REVIEW PHASE
+for responses
+PROPOSAL contains
+■ Short name
+■ Description
+■ Program or Impact Area
+■ Cost of Implementation
+
+-- 4 of 7 --
+
+1. Setup cost $
+2. Recurring cost
+frequency
+● Bottomliner/Facilitator
+● Evidence of utility
+● Additional Comment/Notes
+2. During REVIEW PHASE, possible responses (POSITIONS) are
+APPROVE [checkmark]
+EXPRESS CONCERN [exclamation point]
+ASK CLARIFYING QUESTION [question mark]
+COMMENT [speachbox]
+SUGGEST MODIFICATION [hammer]
+STAND ASIDE [ghost]
+BLOCK [X]
+3. Every 3 DAYS, COHORT system groups 7 DECISION MAKERS into a COHORT
+COHORT Grouping Heuristics
+● Group VERY ACTIVE users with LESS ACTIVE users
+● Group users that chose DIFFERING POSITIONS on previous 5
+PROPOSALS
+● Don’t group same users TWICE in a row
+COHORT creates a group for each proposal for discussion,
+in addition to the PROPOSAL DISCUSSION chat
+
+-- 5 of 7 --
+
+GUI Interface idea
+
+-- 6 of 7 --
+
+
+
+-- 7 of 7 --
+

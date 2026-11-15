@@ -1,0 +1,25 @@
+{
+  "name": "consensish",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev --host 127.0.0.1 --port 9001",
+    "build": "nuxt build",
+    "start": "PORT=9001 HOST=127.0.0.1 node .output/server/index.mjs",
+    "typecheck": "nuxt typecheck",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "nuxt": "^4.6.4",
+    "vue": "^3.5.45",
+    "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.14",
+    "@types/node": "^25.0.0"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}

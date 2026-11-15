@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Nuxt output and generated files
+.nuxt/
+.output/
+.nitro/
+.cache/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Local configuration and secrets (keep shareable templates)
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.sample
+*.local
+
+# Runtime data, including SQLite journals and backups
+.data/
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.sqlite.bak
+*.sqlite3.bak
+
+# Logs
+logs/
+*.log
+
+# OS and editor files
+.DS_Store
+._*
+Thumbs.db
+.idea/
+*.swp
+*.swo
+*~
