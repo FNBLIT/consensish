@@ -16,6 +16,10 @@ Publication represents presentation at a meeting, so deadlines currently start a
 
 Accepting a modification requires the facilitator to attest to proposer consent. Because this first version has no separate proposer authentication, consent is not independently verified. Previous versions and their responses remain in history; they do not count toward the revised proposal. The browser displays the fresh review state on refresh. No outbound notifications are sent.
 
+## Interface
+
+Copy describes the available actions, review rules, and recorded outcomes directly. The general interface uses neutral grays and system fonts. Response accents follow the source PDF: approval green (#274e13), concerns yellow (#f1c232), clarifying questions purple (#351c75), comments blue (#0000ff), suggested modifications brown (#b45f06), and blocks dark red (#660000). Stand aside stays neutral. Yellow is used behind dark text for readability; labels and symbols identify every response independently of color.
+
 ## Next implementation stages
 
 1. **Group membership and roles.** Decide whether to retain anonymous browser participation as a mode, introduce named invite links, or require accounts. Add a roster, proposer roles, multi-proposer consent, participant recovery, key rotation, and explicit revocation. The roster is a prerequisite for meaningful counts of default stand-asides and fair cohort allocation.
